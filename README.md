@@ -33,5 +33,6 @@ Film 34 s w rozdzielczości 480x360 liczy się około 10 minut na RTX 5070 Ti. G
 
 ## Licencje
 
+- Skrypty tego projektu: MIT (plik `LICENSE`)
 - RelayVSR: Apache-2.0, https://github.com/kopperx/RelayVSR (pobierany przy instalacji)
 - RIFE (`rife/`): MIT, kod z https://github.com/Fannovel16/ComfyUI-Frame-Interpolation, model z https://github.com/hzwer/Practical-RIFE
