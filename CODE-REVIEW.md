@@ -1,3 +1,3 @@
-# Rejestr błędów - Poprawa wideo
+# Rejestr błędów - Enhance Vintage Milf
 
 Brak znanych błędów.

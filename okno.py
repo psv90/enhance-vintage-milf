@@ -27,7 +27,7 @@ def _okno(tytul):
 
 def wybierz_plik():
     """Zwraca sciezke wybranego filmu albo None."""
-    root = _okno("Poprawa wideo")
+    root = _okno("Enhance Vintage Milf")
     root.withdraw()
     sciezka = filedialog.askopenfilename(parent=root, title="Wybierz film do poprawy", filetypes=FILMY)
     root.destroy()

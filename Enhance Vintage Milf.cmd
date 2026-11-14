@@ -1,7 +1,7 @@
 @echo off
 rem Pelna poprawa filmu: upusc film na ten plik albo kliknij dwa razy i wybierz film.
 chcp 65001 >nul
-title Poprawa wideo
+title Enhance Vintage Milf
 if not exist "%~dp0silnik\zainstalowane.txt" (
   echo Pierwsze uruchomienie: instaluje potrzebne programy i modele.
   echo Potrzeba ok. 20 GB miejsca i internetu, moze to potrwac od kilkunastu minut do godziny.

@@ -1,4 +1,4 @@
-# Poprawa wideo
+# Enhance Vintage Milf
 
 Poprawia stare, małe filmy jednym kliknięciem:
 
@@ -19,11 +19,11 @@ Wyniki zapisuje obok oryginału: `<film>_poprawiony_120fps.mp4` i `<film>_porown
 ## Jak używać
 
 1. Pobierz paczkę (na GitHubie: zielony przycisk **Code** → **Download ZIP**) i rozpakuj ją w dowolne miejsce, najlepiej na dysk z dużą ilością miejsca.
-2. Kliknij dwa razy `Popraw wideo.cmd`.
+2. Kliknij dwa razy `Enhance Vintage Milf.cmd`.
 3. Za pierwszym razem instalator sam pobierze wszystko do folderu `silnik` (Python, PyTorch, RelayVSR, modele, w razie potrzeby ffmpeg). Trwa to od kilkunastu minut do godziny. Jeśli przerwie się w połowie, uruchom ponownie - dokończy.
 4. Wybierz film i liczbę klatek na sekundę. Po skończeniu otworzy się folder z wynikiem.
 
-Po instalacji obok pojawi się skrót `Popraw wideo` z ikoną. Film można też przeciągnąć myszką na skrót albo na `Popraw wideo.cmd`.
+Po instalacji obok pojawi się skrót `Enhance Vintage Milf` z ikoną. Film można też przeciągnąć myszką na skrót albo na `Enhance Vintage Milf.cmd`.
 
 Program nic nie instaluje poza tym folderem. Żeby go usunąć, wystarczy skasować folder.
 
