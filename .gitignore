@@ -1,0 +1,6 @@
+# Instalowane przez instaluj.ps1 (Python, PyTorch, RelayVSR, modele, ffmpeg)
+silnik/
+# Gotowa paczka zip i skrót (skrót ma ścieżki z konkretnego komputera)
+paczka/
+*.lnk
+__pycache__/

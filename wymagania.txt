@@ -1,0 +1,10 @@
+# Paczki dla RelayVSR, RIFE i skryptow (torch instaluje osobno instaluj.ps1 z indeksu cu128)
+diffusers==0.37.1
+accelerate==1.15.0
+einops==0.8.2
+av==18.1.0
+safetensors==0.8.0
+numpy==2.5.4
+pillow==13.0.0
+triton-windows==3.6.0.post26
+huggingface-hub==1.33.0
