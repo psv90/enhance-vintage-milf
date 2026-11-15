@@ -93,7 +93,7 @@ try {
     # Skrót z ikoną obok skryptów (skrótów nie da się przenieść, więc tworzy go instalator)
     $sh = New-Object -ComObject WScript.Shell
     $lnk = $sh.CreateShortcut((Join-Path $Baza 'Enhance Vintage Milf.lnk'))
-    $lnk.TargetPath = Join-Path $Baza 'Enhance Vintage Milf.cmd'
+    $lnk.TargetPath = Join-Path $Baza 'Enhance Vintage Milf.exe'
     $lnk.WorkingDirectory = $Baza
     $lnk.IconLocation = (Join-Path $Baza 'ikona.ico') + ',0'
     $lnk.Description = 'Powiększenie 4x, kolory, odszumianie, wyostrzanie i płynność 60/120 kl./s'

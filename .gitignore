@@ -6,5 +6,6 @@ paczka/
 __pycache__/
 # Mockupy z grafikami postaci - tylko lokalnie, nie do publicznego repo
 mockupy/
-# Grafiki postaci w interfejsie - tylko lokalnie, nie do publicznego repo
-ui/grafiki/
+# Wlasna naklejka faceta w logo (nie do publicznego repo); w repo jest facet_domyslny.png
+ui/grafiki/wyciete/naklejki/facet.png
+ui/grafiki/wyciete/naklejki/facerrt.png

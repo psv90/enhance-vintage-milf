@@ -19,11 +19,15 @@ Wyniki zapisuje obok oryginału: `<film>_poprawiony_120fps.mp4` i `<film>_porown
 ## Jak używać
 
 1. Pobierz paczkę (na GitHubie: zielony przycisk **Code** → **Download ZIP**) i rozpakuj ją w dowolne miejsce, najlepiej na dysk z dużą ilością miejsca.
-2. Kliknij dwa razy `Enhance Vintage Milf.cmd`.
-3. Za pierwszym razem instalator sam pobierze wszystko do folderu `silnik` (Python, PyTorch, RelayVSR, modele, w razie potrzeby ffmpeg). Trwa to od kilkunastu minut do godziny. Jeśli przerwie się w połowie, uruchom ponownie - dokończy.
+2. Kliknij dwa razy `Enhance Vintage Milf.exe`.
+3. Za pierwszym razem program zapyta o instalację i sam pobierze wszystko do folderu `silnik` (Python, PyTorch, RelayVSR, modele, w razie potrzeby ffmpeg). Trwa to od kilkunastu minut do godziny. Jeśli przerwie się w połowie, uruchom ponownie - dokończy.
 4. Otworzy się okno programu. Kliknij „Wybierz film”, ustaw płynność (60 albo 120 kl./s) i siłę balansu bieli, a potem „Popraw film”. Okno pokazuje postęp 4 kroków, szacowany czas, log i podgląd przed/po.
 
-Po instalacji obok pojawi się skrót `Enhance Vintage Milf` z ikoną. Filmy można też przeciągnąć myszką na skrót albo na `Enhance Vintage Milf.cmd`. Gdy okno już jest otwarte, trafią do kolejki i policzą się po kolei.
+Po instalacji obok pojawi się skrót `Enhance Vintage Milf` z ikoną. Filmy można też przeciągnąć myszką na skrót albo na `Enhance Vintage Milf.exe`. Gdy okno już jest otwarte, trafią do kolejki i policzą się po kolei.
+
+Własna naklejka faceta w logo: zapisz PNG z przezroczystym tłem jako `ui\grafiki\wyciete\naklejki\facet.png` (plik jest w `.gitignore`). Bez niego logo pokazuje `facet_domyslny.png`.
+
+`Enhance Vintage Milf.exe` to mały starter ze źródłem w `start\EnhanceVintageMilf.cs`. Po zmianie źródła albo ikony zbuduj go od nowa: `powershell -File zbuduj_exe.ps1` (kompilator C# jest w każdym Windows).
 
 Okno to Edge w trybie aplikacji (jest w każdym Windows 10 i 11), a pracę robi `aplikacja.py` w tle. Program zamyka się sam, gdy zamkniesz okno i nic się nie liczy. Wersja bez okna, w konsoli: `silnik\RelayVSR\.venv\Scripts\python.exe popraw.py FILM.mp4`.
 
