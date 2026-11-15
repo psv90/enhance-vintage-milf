@@ -21,9 +21,11 @@ Wyniki zapisuje obok oryginału: `<film>_poprawiony_120fps.mp4` i `<film>_porown
 1. Pobierz paczkę (na GitHubie: zielony przycisk **Code** → **Download ZIP**) i rozpakuj ją w dowolne miejsce, najlepiej na dysk z dużą ilością miejsca.
 2. Kliknij dwa razy `Enhance Vintage Milf.cmd`.
 3. Za pierwszym razem instalator sam pobierze wszystko do folderu `silnik` (Python, PyTorch, RelayVSR, modele, w razie potrzeby ffmpeg). Trwa to od kilkunastu minut do godziny. Jeśli przerwie się w połowie, uruchom ponownie - dokończy.
-4. Wybierz film i liczbę klatek na sekundę. Po skończeniu otworzy się folder z wynikiem.
+4. Otworzy się okno programu. Kliknij „Wybierz film”, ustaw płynność (60 albo 120 kl./s) i siłę balansu bieli, a potem „Popraw film”. Okno pokazuje postęp 4 kroków, szacowany czas, log i podgląd przed/po.
 
-Po instalacji obok pojawi się skrót `Enhance Vintage Milf` z ikoną. Film można też przeciągnąć myszką na skrót albo na `Enhance Vintage Milf.cmd`.
+Po instalacji obok pojawi się skrót `Enhance Vintage Milf` z ikoną. Filmy można też przeciągnąć myszką na skrót albo na `Enhance Vintage Milf.cmd`. Gdy okno już jest otwarte, trafią do kolejki i policzą się po kolei.
+
+Okno to Edge w trybie aplikacji (jest w każdym Windows 10 i 11), a pracę robi `aplikacja.py` w tle. Program zamyka się sam, gdy zamkniesz okno i nic się nie liczy. Wersja bez okna, w konsoli: `silnik\RelayVSR\.venv\Scripts\python.exe popraw.py FILM.mp4`.
 
 Program nic nie instaluje poza tym folderem. Żeby go usunąć, wystarczy skasować folder.
 

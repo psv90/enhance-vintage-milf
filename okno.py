@@ -25,10 +25,14 @@ def _okno(tytul):
     return root
 
 
-def wybierz_plik():
-    """Zwraca sciezke wybranego filmu albo None."""
+def wybierz_plik(wiele=False):
+    """Zwraca sciezke wybranego filmu albo None; z wiele=True liste sciezek (pusta, gdy anulowano)."""
     root = _okno("Enhance Vintage Milf")
     root.withdraw()
+    if wiele:
+        sciezki = filedialog.askopenfilenames(parent=root, title="Wybierz filmy do poprawy", filetypes=FILMY)
+        root.destroy()
+        return list(sciezki)
     sciezka = filedialog.askopenfilename(parent=root, title="Wybierz film do poprawy", filetypes=FILMY)
     root.destroy()
     return sciezka or None

@@ -4,3 +4,7 @@ silnik/
 paczka/
 *.lnk
 __pycache__/
+# Mockupy z grafikami postaci - tylko lokalnie, nie do publicznego repo
+mockupy/
+# Grafiki postaci w interfejsie - tylko lokalnie, nie do publicznego repo
+ui/grafiki/

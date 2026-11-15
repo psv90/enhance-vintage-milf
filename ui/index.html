@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enhance Vintage MILF</title>
+<link rel="icon" href="ikona.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+.kier-a3{--tlo:#16110f;--karta:#221a17;--karta2:#2c221e;--linia:#4a3a33;--obrys:#8a756a;--tekst:#fbf3e6;--tekst2:#f0dcc4;--roz:#ff4fa0;--roz-c:#ff8fc2;--rozb:#a50e4d;--zloto:#f2c14e;--ok:#9be8b4;--blad:#ff6b5b;
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;color:var(--tekst);background:var(--tlo);min-height:100vh;
+  background-image:linear-gradient(180deg,#1d1513 0,var(--tlo) 420px);overflow-x:clip}
+.kier-a3 *{box-sizing:border-box}
+.kier-a3 .stany{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:14px 16px 0}
+.kier-a3 .stany button{font:500 13px 'Bricolage Grotesque';color:var(--tekst2);background:transparent;border:1px solid var(--obrys);border-radius:999px;padding:7px 14px;cursor:pointer;transition:border-color .2s,background .2s}
+.kier-a3 .stany button:hover{border-color:var(--zloto);color:var(--tekst)}
+.kier-a3 .stany button.on{background:var(--zloto);color:#1a1208;border-color:var(--zloto)}
+.kier-a3 .okno{max-width:1360px;margin:14px auto 40px;border:1px solid var(--linia);border-radius:16px;background:rgba(22,17,15,.94);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.kier-a3 .belka{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#100c0b;border-radius:16px 16px 0 0;border-bottom:1px solid var(--linia);font-size:13px}
+.kier-a3 .belka .kropki{margin-left:auto;display:flex;gap:6px}.kier-a3 .belka .kropki i{width:12px;height:12px;border-radius:50%;background:#3b302b;display:block}
+.kier-a3 .naglowek{display:flex;align-items:center;gap:20px;padding:20px 24px 6px;flex-wrap:wrap}
+.kier-a3 h1{font:400 clamp(28px,3.6vw,44px)/1 'Abril Fatface',serif;margin:0;letter-spacing:.5px}
+.kier-a3 .neon{color:var(--roz);animation:a3-migot 6s infinite}
+@keyframes a3-migot{0%,92%,100%{opacity:1}93%{opacity:.55}95%{opacity:1}97%{opacity:.7}}
+.kier-a3 .gpu{margin-left:auto;display:flex;align-items:center;gap:10px;background:var(--karta);border:1px solid var(--linia);border-radius:12px;padding:10px 14px;font-size:14px}
+.kier-a3 .gpu .dioda{width:10px;height:10px;border-radius:50%;background:#5ee08a}
+.kier-a3 .gpu.zajeta .dioda{background:var(--zloto)}
+.kier-a3 .siatka{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr) minmax(0,.95fr);gap:22px;padding:18px 24px 30px;align-items:start}
+.kier-a3 .kol{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-content:start;min-width:0}
+.kier-a3 .kol:first-child{gap:64px}
+.kier-a3 .karta{min-width:0;background:var(--karta);border:1px solid var(--linia);border-radius:16px;padding:18px;position:relative;animation:a3-wjazd .6s cubic-bezier(.2,.8,.2,1) both}
+.kier-a3 .kol:nth-child(2) .karta{animation-delay:.08s}.kier-a3 .kol:nth-child(3) .karta{animation-delay:.16s}
+@keyframes a3-wjazd{from{opacity:0;transform:translateY(16px)}}
+.kier-a3 h2{font:italic 400 22px 'DM Serif Display',serif;margin:0 0 14px}
+.kier-a3 h2 small{font:500 12px 'Bricolage Grotesque';font-style:normal;color:var(--zloto);letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:4px}
+/* naklejki */
+.kier-a3 .naklejka{position:absolute;z-index:4;pointer-events:none;cursor:default}
+.kier-a3 .naklejka img{display:block;width:100%;height:auto;transform:rotate(var(--rot,-4deg));transition:transform .3s cubic-bezier(.3,1.5,.5,1),filter .4s;
+  filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 8px 10px rgba(0,0,0,.45))}
+.kier-a3 .dymek{position:absolute;background:#fbf6e3;color:#16110f;font:400 18px 'Abril Fatface';padding:8px 12px;border-radius:14px;white-space:nowrap;box-shadow:0 4px 0 #16110f;border:2px solid #16110f;animation:a3-dymek 2.4s ease-in-out infinite}
+.kier-a3 .dymek::after{content:'';position:absolute;bottom:-10px;left:22px;border:8px solid transparent;border-top-color:#16110f;border-bottom:0}
+@keyframes a3-dymek{50%{transform:translateY(-4px) rotate(-2deg)}}
+/* krok 1 */
+.kier-a3 .strefa{border:2px dashed var(--obrys);border-radius:14px;padding:30px 18px 18px 110px;min-height:210px;margin-top:22px;display:flex;flex-direction:column;justify-content:center;transition:transform .25s,background .25s,border-color .25s;cursor:pointer;position:relative;background:linear-gradient(135deg,rgba(255,79,160,.05),transparent)}
+.kier-a3 .strefa:hover,.kier-a3 .strefa.nad{border-color:var(--roz);background:rgba(255,79,160,.09);transform:scale(1.01)}
+.kier-a3 .strefa b{font:400 24px/1.1 'Abril Fatface';display:block;margin-bottom:8px}
+.kier-a3 .strefa p{margin:0 0 12px;font-size:15px;line-height:1.45;color:var(--tekst2)}
+.kier-a3 .strefa .naklejka{left:-16px;bottom:-14px;width:98px;--rot:-6deg}
+.kier-a3 .strefa .dymek{right:12px;top:-22px}
+.kier-a3 .strefa .dymek::after{left:auto;right:22px}
+.kier-a3 .btn{font:700 15px 'Bricolage Grotesque';border:0;border-radius:12px;padding:12px 18px;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px}
+.kier-a3 .btn:active{transform:scale(.96)}
+.kier-a3 .btn-roz{background:var(--rozb);color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.4)}
+.kier-a3 .btn-roz:hover{background:#b8125a}
+.kier-a3 .btn-cien{background:#33271f;color:var(--tekst);border:1px solid var(--obrys)}
+.kier-a3 .btn-cien:hover{border-color:var(--tekst2)}
+.kier-a3 .btn-wielki{width:100%;font:400 20px 'Abril Fatface';letter-spacing:1px;padding:16px}
+.kier-a3 .btn[disabled]{opacity:.45;cursor:not-allowed;box-shadow:none}
+.kier-a3 .plik{display:flex;gap:14px;align-items:center;background:var(--karta2);border-radius:14px;padding:14px;flex-wrap:wrap}
+.kier-a3 .plik .miniatura{width:88px;height:64px;border-radius:8px;background:url(grafiki/supermarket.jpg) center/cover;filter:sepia(.7) contrast(.85) blur(.6px);flex:none;border:2px solid var(--obrys)}
+.kier-a3 .plik .nazwa{font:700 16px 'Bricolage Grotesque';word-break:break-all}
+.kier-a3 .info{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.kier-a3 .tag{font-size:12.5px;background:#3a2d27;border-radius:999px;padding:4px 10px}
+.kier-a3 .tag.zl{background:rgba(242,193,78,.18);color:var(--zloto)}
+/* płynność */
+.kier-a3 .plyn .naklejka{right:-22px;top:-96px;width:auto;height:112px;--rot:8deg}
+.kier-a3 .plyn .naklejka img{height:100%;width:auto}
+@media (max-width:480px){.kier-a3:not([data-stan=pusty]) .plyn .naklejka{display:none}}
+.kier-a3 .kls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 10px}
+.kier-a3 .kl{border:2px solid var(--obrys);border-radius:14px;background:var(--karta2);color:var(--tekst);padding:12px;cursor:pointer;text-align:left;transition:transform .2s,border-color .2s,background .2s;font-family:'Bricolage Grotesque'}
+.kier-a3 .kl strong{font:400 36px/1 'Abril Fatface';display:block}
+.kier-a3 .kl span{font-size:14px;color:var(--tekst2)}
+.kier-a3 .kl:hover{border-color:var(--roz-c);transform:translateY(-2px)}
+.kier-a3 .kl.on{border-color:var(--roz);background:rgba(255,79,160,.12)}
+.kier-a3 .wyliczenie{font-size:15px;color:var(--tekst2);margin:0 0 12px}
+.kier-a3 .wyliczenie b{color:var(--zloto)}
+.kier-a3 .ustaw{display:grid;gap:12px;margin:12px 0 16px;padding-top:12px;border-top:1px solid var(--linia)}
+.kier-a3 .wiersz{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px}
+.kier-a3 input[type=range]{accent-color:var(--roz);width:120px}
+.kier-a3 .przel{width:46px;height:26px;border-radius:999px;background:#9a8579;position:relative;cursor:pointer;border:0;transition:background .2s;flex:none}
+.kier-a3 .przel::after{content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:var(--tekst);transition:transform .25s cubic-bezier(.3,1.5,.5,1)}
+.kier-a3 .przel.on{background:var(--rozb)}.kier-a3 .przel.on::after{transform:translateX(20px)}
+/* środek */
+.kier-a3 .srodek{padding-bottom:150px}
+.kier-a3 .srodek .facet{left:auto;right:12px;bottom:-40px;width:96px;--rot:-3deg}
+.kier-a3 .srodek .kobieta{left:16px;right:auto;bottom:-34px;height:176px;width:auto;--rot:3deg}
+.kier-a3 .srodek .kobieta img{height:100%;width:auto}
+.kier-a3[data-stan=pusty] .srodek .kobieta{display:none}
+.kier-a3[data-stan=blad] .srodek.karta{padding-bottom:160px}
+/* logo */
+.kier-a3 .logo{position:relative;display:flex;align-items:flex-end;gap:0;margin:0;padding-top:6px;flex:1;min-width:0;max-width:1000px}
+.kier-a3 .logo .tablica{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:4px 22px;flex-wrap:wrap;padding:22px 30px 24px;margin-bottom:22px}
+.kier-a3 .logo .tablica .t1{font-size:clamp(18px,2.2vw,30px);margin:0}
+.kier-a3 .logo .tablica .t2{font-size:clamp(34px,5vw,72px);margin:0}
+.kier-a3 .logo .tablica .t3{font-size:clamp(13px,1.4vw,20px);margin:0}
+@media (max-width:700px){.kier-a3 .logo{flex-basis:100%}.kier-a3 .logo .tablica{padding:18px 12px 20px;gap:2px 10px}}
+.kier-a3 .logo img{height:150px;width:auto;flex:none;position:relative;z-index:2;filter:drop-shadow(0 2px 0 rgba(0,0,0,.35)) drop-shadow(0 8px 10px rgba(0,0,0,.55))}
+.kier-a3 .logo .l-fac{margin-right:-18px;transform:rotate(-7deg);transform-origin:bottom center}
+.kier-a3 .logo .l-kob{margin-left:-14px;transform:scaleX(-1) rotate(-7deg);transform-origin:bottom center}
+.kier-a3 .tablica{position:relative;z-index:1;margin-bottom:10px;padding:10px 26px 12px;border-radius:14px;background:#2a1a17;border:2px solid var(--zloto);box-shadow:inset 0 0 0 4px #2a1a17,inset 0 0 0 5px rgba(242,193,78,.55),0 10px 24px rgba(0,0,0,.45);text-align:center;line-height:1}
+/* żarówki: dwie przeplatane serie, łagodnie przygasają na zmianę (efekt biegnącego światła) */
+.kier-a3 .zar{position:absolute;left:12px;right:12px;height:6px;pointer-events:none;background:radial-gradient(circle,#ffe7a6 0 1.7px,rgba(255,231,166,.35) 2.2px,transparent 3px) 0 50%/16px 6px repeat-x;animation:a3-zarowki 2.4s ease-in-out infinite}
+.kier-a3 .zar.n{background-position:8px 50%;animation-delay:-1.2s}
+.kier-a3 .zar.g{top:4px}.kier-a3 .zar.d{bottom:4px}
+@keyframes a3-zarowki{0%,100%{opacity:1}50%{opacity:.4}}
+.kier-a3 .tablica .t1{display:block;font:italic 400 18px 'DM Serif Display',serif;color:var(--tekst2);letter-spacing:3px;margin-top:4px}
+.kier-a3 .tablica .t2{display:block;font:400 clamp(30px,3.6vw,44px)/1 'Abril Fatface',serif;color:var(--roz);margin:2px 0}
+.kier-a3 .tablica .t3{display:inline-block;font:700 15px 'Bricolage Grotesque';letter-spacing:8px;padding:3px 4px 3px 12px;color:#1a1208;background:var(--zloto);border-radius:4px;margin-bottom:4px}
+@media (max-width:600px){.kier-a3 .logo img{height:84px}.kier-a3 .tablica{padding:8px 14px 10px}.kier-a3 .tablica .t1{font-size:14px}.kier-a3 .tablica .t3{font-size:12px;letter-spacing:5px}}
+@media (max-width:380px){.kier-a3 .logo img{height:64px}.kier-a3 .logo .l-fac{margin-right:-10px}.kier-a3 .logo .l-kob{margin-left:-8px}.kier-a3 .tablica .t2{font-size:26px}}
+@media (max-width:480px){.kier-a3 .srodek .kobieta{height:130px}}
+.kier-a3[data-stan=trwa] .plik .btn{display:none}
+.kier-a3[data-stan=gotowe] #a3Start,.kier-a3[data-stan=blad] #a3Start{background:#33271f;border:1px solid #8a756a;box-shadow:none}
+.kier-a3[data-stan=blad] .srodek .facet{display:none}
+.kier-a3[data-stan=blad] .srodek{padding-bottom:18px}
+.kier-a3 .srodek .facet.skok img{animation:a3-skok .6s cubic-bezier(.3,1.6,.5,1)}
+@keyframes a3-skok{40%{transform:translateY(-26px) rotate(8deg)}}
+.kier-a3 .widok{display:none}
+.kier-a3[data-stan=pusty] .w-pod,.kier-a3[data-stan=plik] .w-pod,.kier-a3[data-stan=trwa] .w-trwa,.kier-a3[data-stan=gotowe] .w-got,.kier-a3[data-stan=gotowe] .w-pod,.kier-a3[data-stan=blad] .w-blad{display:block}
+.kier-a3 .naglowek-post{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.kier-a3 .proc{font:400 64px/1 'DM Serif Display',serif;font-style:italic}
+.kier-a3 .proc span{font-size:28px}
+.kier-a3 .czasy{display:flex;gap:18px;font-size:14px;color:var(--tekst2)}
+.kier-a3 .czasy b{display:block;font:400 22px 'Abril Fatface';color:var(--tekst)}
+.kier-a3 .tasma{position:relative;height:30px;border:1px solid var(--obrys);border-radius:8px;overflow:hidden;background:#0d0a09;margin:14px 0 12px}
+.kier-a3 .tasma::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 14px,rgba(255,255,255,.05) 14px 22px);background-size:22px 100%;animation:a3-jedz 1s linear infinite}
+@keyframes a3-jedz{to{background-position:22px 0}}
+.kier-a3 .wyp{position:absolute;inset:0;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--rozb),var(--zloto));transition:transform .4s ease}
+.kier-a3 .dziurki{position:absolute;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,#16110f 0 4px,transparent 4px 10px);z-index:2}
+.kier-a3 .dziurki.g{top:3px}.kier-a3 .dziurki.d{bottom:3px}
+.kier-a3 .kroki{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;list-style:none;margin:0;padding:0}
+.kier-a3 .krok{position:relative;border:1px solid var(--linia);border-radius:12px;background:var(--karta2);padding:56px 10px 10px;transition:border-color .3s,background .3s}
+.kier-a3 .krok .scena{position:absolute;left:auto;right:6px;top:-26px;width:56px;--rot:-5deg}
+.kier-a3 .krok{padding-top:40px}
+.kier-a3 .krok:nth-child(2n) .scena{--rot:5deg}
+.kier-a3 .krok .scena img{filter:grayscale(1) brightness(.75) drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff)}
+.kier-a3 .krok.akt .scena img,.kier-a3 .krok.zrob .scena img{filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 6px 8px rgba(0,0,0,.45))}
+.kier-a3 .krok.akt .scena img{animation:a3-skok .7s cubic-bezier(.3,1.6,.5,1)}
+.kier-a3 .krok .nr{font:700 12px 'Bricolage Grotesque';letter-spacing:1px;color:var(--tekst2)}
+.kier-a3 .krok .op{font-size:14px;font-weight:700;margin-top:2px;line-height:1.25}
+.kier-a3 .krok .pas{height:4px;background:#0d0a09;border-radius:2px;margin-top:8px;overflow:hidden}
+.kier-a3 .krok .pas i{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:var(--zloto);transition:transform .3s}
+.kier-a3 .krok.akt{border-color:var(--roz);background:rgba(255,79,160,.1)}
+.kier-a3 .krok.akt .nr::after{content:' · trwa';color:var(--roz-c)}
+.kier-a3 .krok.zrob .nr::after{content:' ✔ gotowe';color:var(--ok)}
+.kier-a3 .krok.zrob .pas i{background:#5ee08a}
+.kier-a3 .os{display:flex;gap:4px;margin-top:14px;overflow:hidden;border-radius:6px}
+.kier-a3 .os img{width:0;flex:1 1 0;min-width:0;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--linia);border-radius:3px;filter:grayscale(.8) brightness(.6);transition:filter .4s,border-color .4s}
+.kier-a3 .os img.zr{filter:none;border-color:var(--zloto)}
+.kier-a3 details.log{margin-top:12px;border:1px solid var(--linia);border-radius:10px;background:#0d0a09}
+.kier-a3 details.log summary{cursor:pointer;padding:10px 12px;font:700 13px 'Bricolage Grotesque';list-style:none;color:var(--tekst2)}
+.kier-a3 details.log summary::-webkit-details-marker{display:none}
+.kier-a3 details.log summary::before{content:'▸ ';color:var(--zloto)}
+.kier-a3 details[open].log summary::before{content:'▾ '}
+.kier-a3 .log pre{margin:0;padding:0 12px 12px;font:13px/1.6 ui-monospace,Consolas,monospace;color:#c8f5d8;max-height:140px;overflow:auto;white-space:pre-wrap}
+.kier-a3 .log pre .kursor{animation:a3-mrug 1s steps(1) infinite}
+@keyframes a3-mrug{50%{opacity:0}}
+.kier-a3 .dol{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.kier-a3 .anuluj-box{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.kier-a3 .anuluj-box .pyt{display:none;align-items:center;gap:8px;flex-wrap:wrap}
+.kier-a3 .anuluj-box.pyta .pyt{display:flex}.kier-a3 .anuluj-box.pyta #a3Anuluj{display:none}
+.kier-a3 .tak{background:var(--blad);color:#1a0705}
+/* przed po */
+.kier-a3 .porownanie{position:relative;aspect-ratio:16/11;border-radius:14px;overflow:hidden;border:1px solid var(--linia);user-select:none;cursor:ew-resize;touch-action:none}
+.kier-a3 .porownanie img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.kier-a3 .porownanie .przed{filter:sepia(.8) contrast(.75) brightness(.8) blur(1.4px) saturate(.6);clip-path:inset(0 50% 0 0)}
+.kier-a3 .porownanie .linia{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--tekst)}
+.kier-a3 .porownanie .linia::after{content:'⇆';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:var(--tekst);color:var(--tlo);display:grid;place-items:center;font-weight:700}
+.kier-a3 .porownanie .et{position:absolute;top:10px;font-size:12.5px;font-weight:700;padding:5px 10px;border-radius:999px;background:rgba(22,17,15,.88)}
+.kier-a3 .wynik{display:flex;gap:16px;align-items:center;margin-bottom:16px;padding:14px;border-radius:14px;background:rgba(94,224,138,.1);border:1px solid #2f5e3d;flex-wrap:wrap}
+.kier-a3 .wynik .proc{font-size:48px}
+.kier-a3 .sciezka{font:14px/1.5 ui-monospace,Consolas,monospace;color:var(--tekst);word-break:break-all;margin:6px 0 10px}
+.kier-a3 .bladw{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px;align-items:center}
+.kier-a3 .bladw .naklejka{position:relative;--rot:-6deg}
+.kier-a3 .bladw h3{font:400 30px 'Abril Fatface';margin:0 0 8px;color:var(--blad)}
+.kier-a3 .bladw p{margin:0 0 12px;line-height:1.5;font-size:15px}
+.kier-a3 .bladw code{display:block;font:13px ui-monospace,Consolas,monospace;background:#0d0a09;border:1px solid var(--linia);border-radius:8px;padding:10px 12px;margin-bottom:12px;color:#ffc9c1}
+/* kolejka i historia */
+.kier-a3 .kolejka,.kier-a3 .hist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.kier-a3 .kolejka li,.kier-a3 .hist li{position:relative;display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:12px;background:var(--karta2);font-size:14px;max-height:80px;overflow:hidden;transition:max-height .28s,opacity .28s,transform .28s,padding .28s}
+.kier-a3 .kolejka li .n,.kier-a3 .hist li .n{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.kier-a3 .kolejka li:hover,.kier-a3 .hist li:hover{background:#352a25}
+.kier-a3 .kolejka .st,.kier-a3 .hist .st{margin-left:auto;font-size:13px;color:var(--tekst2);white-space:nowrap}
+.kier-a3 .kolejka li.znika{opacity:0;transform:translateX(30px);max-height:0;padding-top:0;padding-bottom:0}
+.kier-a3 .akcje{position:absolute;right:6px;top:50%;transform:translateY(-50%) scale(.92);display:flex;gap:6px;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:3;background:#352a25;padding:4px;border-radius:10px}
+.kier-a3 li:hover .akcje,.kier-a3 li:focus-within .akcje{opacity:1;pointer-events:auto;transform:translateY(-50%) scale(1)}
+@media (hover:none){.kier-a3 .akcje{opacity:1;pointer-events:auto;position:static;transform:none;margin-left:auto}}
+.kier-a3 .ik{width:36px;height:36px;border-radius:8px;border:1px solid var(--obrys);background:var(--karta);color:var(--tekst);cursor:pointer;font-size:15px;display:grid;place-items:center}
+.kier-a3 .ik:hover{border-color:var(--tekst2)}
+.kier-a3 .ik.usun:hover{border-color:var(--blad);color:var(--blad)}
+.kier-a3 .zwykle{display:flex;gap:6px}
+.kier-a3 .potw{display:none;gap:6px;align-items:center;font-size:13px}
+.kier-a3 .akcje.pyta .zwykle{display:none}.kier-a3 .akcje.pyta .potw{display:flex}
+.kier-a3 .potw button{border:0;border-radius:8px;padding:9px 11px;cursor:pointer;font:700 13px 'Bricolage Grotesque'}
+.kier-a3 .potw .nie{background:#4a3a33;color:var(--tekst)}
+.kier-a3 .pusta{display:none;text-align:center;padding:18px;border:2px dashed var(--obrys);border-radius:12px;color:var(--tekst2)}
+.kier-a3 .pusta p{margin:0 0 10px}
+.kier-a3 .kolejka:empty + .pusta{display:block}
+.kier-a3 .tylko-pusty{display:none}.kier-a3[data-stan=pusty] .tylko-pusty{display:flex}
+.kier-a3 .tylko-plik{display:none}.kier-a3:not([data-stan=pusty]) .tylko-plik{display:flex}
+.kier-a3 .plyn .naklejka{display:none}.kier-a3:not([data-stan=pusty]) .plyn .naklejka{display:block}
+@media (max-width:1100px){.kier-a3 .siatka{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}.kier-a3 .kol:nth-child(3){grid-column:1/-1;grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.kier-a3 .siatka{grid-template-columns:1fr;padding:12px 16px 24px}.kier-a3 .kol:nth-child(3){grid-template-columns:1fr}.kier-a3 .naglowek{padding:16px 16px 4px}.kier-a3 .gpu{margin-left:0}.kier-a3 .kol:first-child{gap:64px}.kier-a3 .kroki{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:34px;margin-top:26px}}
+@media (max-width:480px){.kier-a3 .srodek{padding-bottom:130px}.kier-a3 .srodek .facet{width:62px;bottom:-24px}.kier-a3 .strefa{padding:150px 14px 16px;text-align:center}.kier-a3 .strefa .naklejka{left:18px;top:-14px;bottom:auto;width:64px}.kier-a3 .strefa .dymek{left:auto;right:10px;top:40px;font-size:15px}.kier-a3 .strefa .dymek::after{right:auto;left:-10px;bottom:auto;top:12px;border:8px solid transparent;border-right-color:#16110f;border-left:0}.kier-a3 .karta{padding:14px}.kier-a3 .srodek{padding-bottom:130px}.kier-a3 .proc{font-size:48px}.kier-a3 .bladw{grid-template-columns:1fr}.kier-a3 .kroki{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){.kier-a3 *{animation:none!important;transition:none!important}}
+.kier-a3 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,16px);opacity:0;background:#2c221e;border:1px solid var(--obrys);color:var(--tekst);padding:12px 18px;border-radius:12px;font-size:15px;line-height:1.4;transition:opacity .25s,transform .25s;pointer-events:none;z-index:50;max-width:min(92vw,560px);box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.kier-a3 .toast.on{opacity:1;transform:translate(-50%,0)}
+.kier-a3 [hidden]{display:none!important}
+
+/* poprawki po przegladzie UI */
+.kier-a3 .btn[disabled],.kier-a3 .btn-roz[disabled]{opacity:1;background:#4a3a33;color:#f0dcc4;box-shadow:none;cursor:not-allowed}
+.kier-a3 input[type=range]{height:30px;cursor:pointer}
+.kier-a3 .potw button:hover{filter:brightness(1.15)}.kier-a3 .potw button:active,.kier-a3 .przel:active{transform:scale(.95)}
+.kier-a3 .przel:hover{filter:brightness(1.12)}
+.kier-a3 .okno{border-radius:16px}
+</style>
+</head>
+<body style="margin:0;background:#16110f">
+<div class="kier-a3" data-stan="pusty" id="a3App">
+  <div class="okno">
+    <header class="naglowek">
+      <h1 class="logo" aria-label="Enhance Vintage MILF">
+        <img class="l-fac" src="grafiki/wyciete/naklejki/facet.png" alt="">
+        <span class="tablica" aria-hidden="true"><i class="zar g"></i><i class="zar g n"></i><i class="zar d"></i><i class="zar d n"></i><span class="t1">Enhance</span><span class="t2 neon">Vintage</span><span class="t3">MILF</span></span>
+        <img class="l-kob" src="grafiki/wyciete/naklejki/kobieta.png" alt="">
+      </h1>
+      <div class="gpu" id="a3Gpu"><span class="dioda"></span><div><b id="a3GpuNazwa">Karta graficzna</b><br><span id="a3GpuTxt">sprawdzam…</span></div></div>
+    </header>
+    <main class="siatka">
+      <div class="kol">
+        <section class="karta">
+          <h2><small>Krok 1</small>Film do poprawy</h2>
+          <div class="strefa tylko-pusty" id="a3Strefa" tabindex="0" role="button" aria-label="Wybierz film">
+            <span class="dymek">Daj mi film!</span>
+            <div class="naklejka"><img src="grafiki/wyciete/pozy/kobieta_macha.png" alt="Blondynka w różowym macha na powitanie"></div>
+            <b>Kliknij i wybierz film</b><p>mp4, mkv, mov, avi, webm. Kilka filmów naraz trafi do kolejki. Filmy można też upuścić na ikonę programu.</p><span><button class="btn btn-roz" type="button" id="a3Wybierz">📂 Wybierz film</button></span>
+          </div>
+          <div class="plik tylko-plik">
+            <div class="miniatura" id="a3Mini" aria-hidden="true"></div>
+            <div style="flex:1;min-width:140px"><div class="nazwa" id="a3Nazwa"></div>
+              <div class="info" id="a3Info"></div></div>
+            <button class="btn btn-cien" type="button" id="a3Zmien">Zmień</button>
+          </div>
+        </section>
+        <section class="karta plyn">
+          <h2><small>Krok 2</small>Płynność</h2>
+          <div class="kls" id="a3Kls">
+            <button class="kl" type="button" data-k="60"><strong>60</strong><span>kl./s · szybciej</span></button>
+            <button class="kl on" type="button" data-k="120"><strong>120</strong><span>kl./s · najpłynniej</span></button>
+          </div>
+          <p class="wyliczenie" id="a3Wyl"></p>
+          <div class="ustaw">
+            <div class="wiersz"><label for="a3Biel">Siła balansu bieli</label><span><input id="a3Biel" type="range" min="0" max="1" step="0.05" value="0.9"> <b id="a3BielW">0,90</b></span></div>
+            <div class="wiersz"><span>Rób film porównawczy</span><button class="przel on" id="a3PrzPor" type="button" aria-pressed="true" aria-label="Rób film porównawczy"></button></div>
+            <div class="wiersz"><span>Otwórz folder po skończeniu</span><button class="przel" id="a3PrzFol" type="button" aria-pressed="false" aria-label="Otwórz folder po skończeniu"></button></div>
+          </div>
+          <button class="btn btn-roz btn-wielki" type="button" id="a3Start">▶ Popraw film</button>
+        </section>
+      </div>
+
+      <div class="kol">
+        <section class="karta srodek">
+          <div class="widok w-pod">
+            <h2><small>Podgląd</small>Przed i po</h2>
+          </div>
+          <div class="widok w-got">
+            <div class="wynik">
+              <div class="proc">100<span>%</span></div>
+              <div style="flex:1;min-width:200px"><b id="a3GotTyt">Gotowe!</b>
+                <div class="sciezka" id="a3Sciezki"></div>
+                <button class="btn btn-roz" type="button" id="a3Folder">📁 Otwórz folder</button> <button class="btn btn-cien" type="button" id="a3Kolejny">Popraw kolejny</button></div>
+            </div>
+          </div>
+          <div class="widok w-pod">
+            <div class="porownanie" id="a3Por">
+              <img id="a3PoImg" src="grafiki/frisbee.jpg" alt="Po poprawie"><img id="a3PrzedImg" src="grafiki/frisbee.jpg" alt="Przed poprawą" class="przed">
+              <span class="et" style="left:10px">PRZED</span><span class="et" style="right:10px">PO</span><div class="linia"></div>
+            </div>
+          </div>
+          <div class="widok w-trwa">
+            <h2><small>Krok 3</small><span id="a3TrwaTyt">Poprawiam film</span></h2>
+            <div class="naglowek-post">
+              <div class="proc" id="a3Proc">0<span>%</span></div>
+              <div class="czasy"><span>minęło<b id="a3Min">0:00</b></span><span>zostało około<b id="a3Zost">10:00</b></span></div>
+            </div>
+            <div class="tasma"><div class="wyp" id="a3Wyp"></div><i class="dziurki g"></i><i class="dziurki d"></i></div>
+            <ol class="kroki" id="a3Kroki" style="margin-top:34px">
+              <li class="krok"><div class="naklejka scena"><img src="grafiki/wyciete/silownia.png" alt=""></div><div class="nr">01</div><div class="op">Powiększanie 4× (RelayVSR)</div><div class="pas"><i></i></div></li>
+              <li class="krok"><div class="naklejka scena"><img src="grafiki/wyciete/supermarket.png" alt=""></div><div class="nr">02</div><div class="op">Biel, kontrast, odszumianie</div><div class="pas"><i></i></div></li>
+              <li class="krok"><div class="naklejka scena"><img src="grafiki/wyciete/frisbee.png" alt=""></div><div class="nr">03</div><div class="op" id="a3OpRife">RIFE do 120 kl./s</div><div class="pas"><i></i></div></li>
+              <li class="krok"><div class="naklejka scena"><img src="grafiki/wyciete/kregle.png" alt=""></div><div class="nr">04</div><div class="op">Film porównawczy</div><div class="pas"><i></i></div></li>
+            </ol>
+            <div class="os" id="a3Os"></div>
+            <details class="log"><summary>Log</summary><pre id="a3Log"></pre></details>
+            <div class="dol"><div class="anuluj-box" id="a3AnBox"><button class="btn btn-cien" type="button" id="a3Anuluj">✕ Anuluj</button><span class="pyt">Przerwać poprawę? <button class="btn tak" type="button" id="a3AnTak">Tak, przerwij</button><button class="btn btn-cien" type="button" id="a3AnNie">Nie</button></span></div></div>
+          </div>
+          <div class="widok w-blad">
+            <div class="bladw">
+              <div class="naklejka"><img src="grafiki/wyciete/pozy/facet_oszolomiony.png" alt="Oszołomiony facet z plastrem na czole"></div>
+              <div><h3>Coś się wywróciło</h3><p id="a3BladTxt"></p><code id="a3BladKod"></code>
+                <button class="btn btn-roz" type="button" id="a3Ponow">↻ Spróbuj ponownie</button></div>
+            </div>
+          </div>
+          <div class="naklejka facet" id="a3Facet"><img id="a3FacetImg" src="grafiki/wyciete/facet.png" alt=""></div>
+          <div class="naklejka kobieta" id="a3Kob"><img id="a3KobPlyn" src="grafiki/wyciete/pozy/kobieta_szpula.png" alt=""></div>
+        </section>
+      </div>
+
+      <div class="kol">
+        <section class="karta">
+          <h2><small>Kolejka</small>Następne filmy</h2>
+          <ul class="kolejka" id="a3Kolejka"></ul><div class="pusta"><p>Kolejka jest pusta.</p><button class="btn btn-cien" type="button" id="a3Dodaj">+ Dodaj filmy</button></div>
+        </section>
+        <section class="karta">
+          <h2><small>Historia</small>Ostatnio poprawione</h2>
+          <ul class="hist" id="a3Hist"></ul>
+        </section>
+      </div>
+    </main>
+    <div class="toast" id="a3Toast" role="status" aria-live="polite"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

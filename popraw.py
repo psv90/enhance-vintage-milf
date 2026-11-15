@@ -21,12 +21,11 @@ import biel_scen
 import okno
 import porownanie
 import rife
-from ustawienia import (CACHE_ENV, FFMPEG_BIN, FILTRY, KL_S_DO_WYBORU, RELAYVSR_DIR, RELAYVSR_PY,
+from ustawienia import (CACHE_ENV, FILTRY, KL_S_DO_WYBORU, RELAYVSR_DIR, RELAYVSR_PY,
                         RELAYVSR_WINDOW, ROBOCZY_DIR)
-from wideo import probe
+from wideo import probe, uzyj_ffmpeg_z_silnika
 
-if (FFMPEG_BIN / "ffmpeg.exe").exists():  # ffmpeg z instalatora ma pierwszenstwo
-    os.environ["PATH"] = f"{FFMPEG_BIN}{os.pathsep}{os.environ['PATH']}"
+uzyj_ffmpeg_z_silnika()
 
 KROKI = 4
 
@@ -66,7 +65,7 @@ def powieksz(src, roboczy):
     return x4
 
 
-def main(src, kl_s):
+def main(src, kl_s, porownaj=True, otworz_folder=True):
     src = Path(src).resolve()
     w, h, fps = probe(src)
     mnoznik = max(1, round(kl_s / fps))
@@ -95,21 +94,26 @@ def main(src, kl_s):
         shutil.copyfile(kolor, cel)
     koniec(t)
 
-    t = krok(4, "Film porownawczy przed/po")
-    porownanie.zrob(src, cel, cel_por)
+    t = krok(4, "Film porownawczy przed/po" if porownaj else "Film porownawczy pominiety")
+    if porownaj:
+        porownanie.zrob(src, cel, cel_por)
     koniec(t)
 
     shutil.rmtree(roboczy, ignore_errors=True)
     print(f"\nGOTOWE w {(time.perf_counter() - caly) / 60:.1f} min")
     print(f"  poprawiony:  {cel}")
-    print(f"  porownanie:  {cel_por}")
-    subprocess.run(["explorer", f"/select,{cel}"])
+    if porownaj:
+        print(f"  porownanie:  {cel_por}")
+    if otworz_folder:
+        subprocess.run(["explorer", f"/select,{cel}"])
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Pelna poprawa filmu")
     ap.add_argument("film", nargs="?")
     ap.add_argument("--kl-s", type=int, choices=KL_S_DO_WYBORU)
+    ap.add_argument("--bez-porownania", action="store_true", help="pomin film porownawczy przed/po")
+    ap.add_argument("--bez-folderu", action="store_true", help="nie otwieraj folderu z wynikiem (uzywa aplikacja)")
     a = ap.parse_args()
     film = a.film or okno.wybierz_plik()
     if not film:
@@ -117,4 +121,4 @@ if __name__ == "__main__":
     kl_s = a.kl_s or okno.wybierz_kl_s(Path(film).name, KL_S_DO_WYBORU)
     if not kl_s:
         raise SystemExit("Nie wybrano liczby klatek.")
-    main(film, kl_s)
+    main(film, kl_s, porownaj=not a.bez_porownania, otworz_folder=not a.bez_folderu)

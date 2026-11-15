@@ -3,6 +3,7 @@
 Wszystko, co instaluje instaluj.ps1, lezy w folderze `silnik` obok skryptow,
 wiec caly folder mozna przeniesc na inny komputer.
 """
+import os
 from pathlib import Path
 
 BAZA = Path(__file__).resolve().parent
@@ -22,7 +23,7 @@ KL_S_DO_WYBORU = (60, 120)  # przyciski w okienku przy starcie
 # mnoznik klatek = wybrane kl./s / kl./s filmu, zaokraglony (np. 30 -> 120 to x4, 25 -> 120 to x5 = 125)
 
 # Balans bieli (biel_auto.py)
-SILA_BIELI = 0.9  # jak mocno neutralizowac biel sciany (1 = calkiem szara)
+SILA_BIELI = float(os.environ.get("EVM_SILA_BIELI", 0.9))  # jak mocno neutralizowac biel sciany (1 = calkiem szara); aplikacja podaje ja przez zmienna srodowiska
 SILA_SKORY = 0.5  # gdy w kadrze nie ma bieli: jak mocno dopasowac skore do poprzedniej sceny
 JASNOSC = 1.027  # mnoznik jasnosci po balansie (jak w recznie dobranej korekcji)
 OKNO_S = 0.5  # co ile sekund mierzyc kolory
@@ -40,6 +41,18 @@ CZCIONKA = "C\\:/Windows/Fonts/arialbd.ttf"  # sciezka w skladni filtra drawtext
 
 # ffmpeg z instalatora (uzywany, gdy w systemie nie ma wlasnego)
 FFMPEG_BIN = SILNIK / "ffmpeg" / "bin"
+
+# Aplikacja okienkowa (aplikacja.py): interfejs HTML, historia, podglady klatek
+UI_DIR = BAZA / "ui"
+HISTORIA = SILNIK / "historia.json"
+KADRY_DIR = SILNIK / "_kadry"
+EDGE = (
+    Path(os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)")) / "Microsoft/Edge/Application/msedge.exe",
+    Path(os.environ.get("ProgramFiles", r"C:\Program Files")) / "Microsoft/Edge/Application/msedge.exe",
+)
+# szacowany czas: film 34 s 480x360 30 kl./s liczy sie ok. 10 min (README); udzial krokow w calosci
+CZAS_WZORZEC = (34 * 30 * 480 * 360, 600)  # (klatki x piksele, sekundy)
+UDZIAL_KROKOW = (0.60, 0.10, 0.20, 0.10)
 
 # Pliki robocze (usuwane po udanym przebiegu) i cache kompilatorow GPU
 ROBOCZY_DIR = SILNIK / "_robocze"
